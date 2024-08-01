@@ -1,0 +1,112 @@
+*{
+    padding:0;
+    margin:0;
+
+}
+h1{
+    margin: 10px;
+    cursor: pointer;
+}
+.logo{
+    font-size: 30px;
+    color: white;
+}
+.navbar{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    height: 70px;
+    background-color: rgb(88, 43, 13);
+    overflow: visible;
+}
+.nav-links{
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    width: 75%;
+}
+.home,
+.services,
+.about,
+.login_navbar{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+.home:hover,
+.services:hover,
+.about:hover{
+    color: rgb(43, 183, 204);
+}
+.login_navbar{
+    background-color: rgb(0, 9, 130);
+    border-radius: 5px;
+    z-index: 0;
+    transition: 1s;
+    margin-top: 10px;
+}
+.login_navbar:hover{
+    background-color: rgb(241, 235, 235);
+    color: rgb(20, 61, 186);
+    border-color: white;
+   
+}
+.mobile-menu-icon{
+    display: none;
+}
+@media screen and (max-width: 1200px) {
+    
+    .logo{
+        display: flex;
+        position: absolute;
+        top: 15px;
+        left: 15px;
+
+    }
+    .nav-links{
+        display: none;
+    }
+    .nav-links-mobile{
+        position: absolute;
+        display: block;
+        list-style: none;
+        background: rgb(35, 39, 113);
+        left: 0;
+        top :70px;
+        height: 300px;
+        transition: all 1s ease-out;
+        width: 100%;
+        z-index: 1;
+    }
+  
+    .home,
+    .services,
+    .about,
+    .login_navbar{
+    color: white;
+    text-align: center;
+    padding: 32px;
+    width: 100%;
+    transition: all 1s ease;
+}
+.login_navbar{
+    background-color: transparent;
+}
+.login_navbar:hover{
+    background-color: transparent;
+}
+.mobile-menu-icon{
+    display:block;
+    position: absolute;
+    font-size: 25px;
+    color: white;
+    background: transparent;
+    outline: none;
+    border: none;
+    top: 20px;
+    right: 25px;
+}
+}

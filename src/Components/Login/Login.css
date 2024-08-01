@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=BIZ+UDPMincho&display=swap');
+.login{
+    background:rgb(216, 232, 241);
+    position: fixed;
+    min-width: 100%;
+    min-height: 100%;
+    background-size: cover;
+    background-position: center;
+    font-family: 'BIZ UDPMincho', serif;
+}
+.form_group{
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+   
+}
+.form_group:hover{
+    border: 1px solid #aaf;
+}
+.card_login{
+    min-height: 40%;
+    width: 400px;
+    background: rgb(174, 223, 247);
+    padding: 50px;
+    margin-top: 8%;
+}
+.btn_login{
+    margin-top: 10px;
+    padding: 10px 50px;
+    text-align: center;
+    border-radius: 5px;
+    background-color: rgb(74, 109, 248);
+    border:none;
+    color: rgb(251, 253, 255);
+}
+.btn_login:hover{
+    background-color: aliceblue;
+    color: black;
+}
+.Login_home{
+    background-color: rgb(165, 245, 245);
+    height: 100vh;
+    margin: 0;
+}
